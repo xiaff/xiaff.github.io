@@ -1,0 +1,460 @@
+.devsite-top-logo-row-wrapper-wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10006
+}
+.devsite-top-logo-row-wrapper {
+    background: #155799
+}
+
+.devsite-top-logo-row {
+    display: -ms-flexbox;
+    display: flex;
+    height: 48px;
+    padding: 0 24px;
+    position: relative
+}
+
+.devsite-header-upper-tabs {
+    display: inline-block;
+    -ms-flex: 1 1 0px;
+    flex: 1 1 0;
+    overflow-y: auto;
+    vertical-align: top;
+    transition: flex .2s, margin .2s, width .2s;
+    transition: flex .2s, margin .2s, width .2s, -ms-flex .2s
+}
+
+.devsite-header-upper-tabs:not(:empty) {
+    margin-left: 48px
+}
+
+.devsite-top-logo-row.devsite-search-active .devsite-header-upper-tabs {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin: 0;
+    visibility: hidden;
+    width: 0
+}
+
+.devsite-header-background {
+    position: relative
+}
+
+.devsite-header-background>.devsite-feedback-button {
+    bottom: 0;
+    margin: 6px 0;
+    position: absolute;
+    right: 16px
+}
+
+.devsite-header-icon-button {
+    color: rgba(255, 255, 255, .7);
+    display: none;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    height: 24px;
+    min-width: 24px;
+    padding: 0;
+    transition: color .2s;
+    width: 24px
+}
+
+.devsite-expand-section-nav {
+    margin: 12px 24px 12px 0
+}
+
+.devsite-header-icon-button:focus, .devsite-header-icon-button:hover, .devsite-header-icon-button:active {
+    color: #fff
+}
+
+@media screen and (max-width:720px) {
+    .devsite-top-logo-row {
+        padding: 0 16px
+    }
+    .devsite-header-upper-tabs {
+        margin-left: 16px
+    }
+    .devsite-top-logo-row.devsite-search-active .devsite-header-upper-tabs {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto
+    }
+    .devsite-header-upper-tabs .devsite-doc-set-nav, .devsite-feedback-button {
+        display: none
+    }
+}
+
+.devsite-product-name-wrapper {
+    display: inline-block;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    height: 36px;
+    margin: 6px 0
+}
+
+.devsite-product-name-link, .devsite-site-logo-link {
+    display: inline-block;
+    opacity: 1;
+    transition: opacity .2s
+}
+
+.devsite-product-name-link:hover, .devsite-product-name-link:focus, .devsite-site-logo-link:focus {
+    opacity: .7;
+    text-decoration: none
+}
+
+.devsite-product-logo-container {
+    background: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 36px;
+    margin-right: 16px;
+    text-align: center;
+    width: 36px
+}
+
+.devsite-product-logo {
+    color: #4285f4;
+    font-size: 24px;
+    height: 24px;
+    margin: 6px;
+    width: 24px
+}
+
+.devsite-product-logo-white {
+    color: #fff;
+    margin: 6px 16px 6px 0
+}
+
+.devsite-product-name {
+    color: #fff;
+    display: inline-block;
+    font: 20px/36px Roboto, sans-serif;
+    letter-spacing: 0;
+    margin: 0;
+    vertical-align: top;
+    white-space: nowrap
+}
+
+.devsite-product-logo {
+    display: block;
+    margin: 0 auto;
+    height: auto;
+    width: 100%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.devsite-site-logo+.devsite-site-name {
+    display: none
+}
+
+
+@media screen and (max-width:720px) {
+    .devsite-product-name-wrapper {
+        -ms-flex: 0 1 auto;
+        flex: 0 1 auto;
+        min-width: 0
+    }
+    .devsite-site-logo+.devsite-site-name {
+        display: block
+    }
+    .devsite-site-logo, .devsite-product-logo-container, .devsite-product-logo-white {
+        display: none
+    }
+}
+
+.devsite-search-form {
+    background: #4285f4;
+    border-radius: 2px;
+    display: inline-block;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    height: 36px;
+    margin: 6px 0 6px 24px;
+    position: relative;
+    text-align: left;
+    transition: background .2s, flex .2s;
+    transition: background .2s, flex .2s, -ms-flex .2s;
+    vertical-align: top;
+    width: 200px
+}
+
+.devsite-high-contrast .devsite-search-form {
+    background: #4285f4
+}
+
+.devsite-search-form:hover {
+    background: #155799
+}
+
+.devsite-high-contrast .devsite-search-form:hover {
+    background: #155799
+}
+
+.devsite-top-logo-row.devsite-search-active .devsite-search-form {
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto
+}
+
+.devsite-high-contrast .devsite-search-active .devsite-search-form, .devsite-search-active .devsite-search-form {
+    background: #fff
+}
+
+.devsite-search-image {
+    color: #fff;
+    left: 24px;
+    position: absolute;
+    top: 6px;
+    transition: color .2s
+}
+
+.devsite-search-image::before {
+    content: 'search'
+}
+
+.devsite-search-active .devsite-search-image {
+    color: #757575
+}
+
+input.devsite-search-field {
+    background: 0;
+    border: 0;
+    color: #fff;
+    height: 36px;
+    padding: 8px 8px 8px 72px;
+    transition: color .2s;
+    width: 100%
+}
+
+.devsite-search-active .devsite-search-field {
+    color: #212121
+}
+
+input.devsite-search-field:focus {
+    border: 0;
+    padding-bottom: 8px
+}
+
+.devsite-search-form ::-webkit-input-placeholder {
+    color: #fff;
+    transition: color .2s
+}
+
+.devsite-search-form :-moz-placeholder {
+    color: #fff;
+    transition: color .2s
+}
+
+.devsite-search-form ::-moz-placeholder {
+    color: #fff;
+    transition: color .2s
+}
+
+.devsite-search-form :-ms-input-placeholder {
+    color: #fff;
+    transition: color .2s
+}
+
+.devsite-search-active .devsite-search-form ::-webkit-input-placeholder {
+    color: #757575
+}
+
+.devsite-search-active .devsite-search-form :-moz-placeholder {
+    color: #757575
+}
+
+.devsite-search-active .devsite-search-form ::-moz-placeholder {
+    color: #757575
+}
+
+.devsite-search-active .devsite-search-form :-ms-input-placeholder {
+    color: #757575
+}
+
+.devsite-search-button {
+    margin: 12px 0
+}
+
+.devsite-search-button::before {
+    content: 'search'
+}
+
+.devsite-responsive-search-open .devsite-search-button {
+    margin: 12px 0 12px 16px
+}
+
+.devsite-responsive-search-open .devsite-search-button::before {
+    content: 'cancel'
+}
+
+@media screen and (max-width:720px) {
+    .devsite-search-button {
+        display: inline-block
+    }
+    .devsite-responsive-search-open .devsite-search-form {
+        display: inline-block;
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto;
+        margin: 6px 0
+    }
+    .devsite-responsive-search-open .devsite-header-upper-tabs, .devsite-responsive-search-open .devsite-product-name-wrapper, .devsite-responsive-search-open .devsite-settings-menu-wrapper, .devsite-responsive-search-open .devsite-user-avatar, .devsite-responsive-search-open .devsite-user-signin, .devsite-search-form {
+        display: none
+    }
+}
+
+.devsite-popout {
+    background: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .12), 0 2px 4px rgba(0, 0, 0, .24), inset 0 4px 6px -4px rgba(0, 0, 0, .24);
+    margin-top: 6px;
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+    position: absolute;
+    transition: transform .2s, visibility .2s;
+    transform: translateY(0);
+    width: 100%;
+    z-index: -1
+}
+
+.devsite-breadcrumb-item {
+    display: inline-block;
+    margin: 0
+}
+@media screen and (max-width:720px) {
+    .devsite-product-name-wrapper .devsite-breadcrumb-item:not(:first-of-type) {
+        display: none
+    }
+    .devsite-product-name-wrapper .devsite-product-name, .devsite-product-name-wrapper .devsite-breadcrumb-list, .devsite-product-name-wrapper .devsite-breadcrumb-item, .devsite-product-name-wrapper .devsite-breadcrumb-link {
+        width: 100%
+    }
+    .devsite-product-name-wrapper .devsite-breadcrumb-link {
+        overflow: hidden;
+        text-overflow: ellipsis
+    }
+    .devsite-breadcrumb-nav {
+        display: block;
+        overflow: auto
+    }
+}
+.devsite-doc-set-nav-row .devsite-overflow-tabs-scroll-wrapper {
+    padding-right: 24px
+}
+@media screen and (max-width:720px) {
+    .devsite-top-logo-row {
+        padding: 0 16px
+    }
+    .devsite-header-upper-tabs {
+        margin-left: 16px
+    }
+    .devsite-top-logo-row.devsite-search-active .devsite-header-upper-tabs {
+        -ms-flex: 1 1 auto;
+        flex: 1 1 auto
+    }
+    .devsite-header-upper-tabs .devsite-doc-set-nav, .devsite-feedback-button {
+        display: none
+    }
+}
+.devsite-doc-set-nav-tab-list {
+    white-space: nowrap
+}
+
+.devsite-overflow-tabs-scroll-wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%
+}
+
+.devsite-doc-set-nav-row .devsite-overflow-tabs-scroll-wrapper {
+    padding-right: 24px
+}
+
+.devsite-overflow-tabs-scroll {
+    left: 0;
+    position: relative;
+    transition: left .2s;
+    width: 100%
+}
+
+.devsite-overflow-tabs-scroll .devsite-feedback-button {
+    position: absolute;
+    right: 0;
+    margin: 6px -8px 6px 0
+}
+
+.devsite-overflow-tabs-scroll-button, .devsite-overflow-tabs-scroll-button:focus, .devsite-overflow-tabs-scroll-button:hover, .devsite-overflow-tabs-scroll-button:active {
+    background: #155799;
+    border-radius: 0;
+    height: 48px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 48px
+}
+
+.devsite-header-no-upper-tabs .devsite-overflow-tabs-scroll-button, .devsite-header-no-upper-tabs .devsite-overflow-tabs-scroll-button:focus, .devsite-header-no-upper-tabs .devsite-overflow-tabs-scroll-button:hover, .devsite-header-no-upper-tabs .devsite-overflow-tabs-scroll-button:active {
+    background: #155799
+}
+
+.devsite-top-logo-row .devsite-overflow-tabs-scroll-button, .devsite-top-logo-row .devsite-overflow-tabs-scroll-button:focus, .devsite-top-logo-row .devsite-overflow-tabs-scroll-button:hover, .devsite-top-logo-row .devsite-overflow-tabs-scroll-button:active {
+    background: #155799
+}
+
+.devsite-overflow-tabs-scroll-button::before {
+    content: 'chevron_right'
+}
+
+.devsite-overflow-tabs-scroll-button.devsite-scroll-back {
+    left: 0
+}
+
+.devsite-overflow-tabs-scroll-button.devsite-scroll-back::before {
+    content: 'chevron_left'
+}
+
+@media screen and (max-width:720px) {
+    .devsite-overflow-tabs-scroll-wrapper {
+        padding-right: 16px
+    }
+}
+.devsite-doc-set-nav-tab-container {
+    display: inline-block;
+    margin: 0;
+}
+.devsite-nav ul{
+    list-style-type: none;
+}
+.devsite-header-upper-tabs .devsite-doc-set-nav-active {
+    border-bottom-color: #fff;
+    color: #fff;
+    font-weight: 500;
+}
+
+.devsite-doc-set-nav-tab {
+    border-bottom: 2px solid transparent;
+    border-top: 2px solid transparent;
+    color: rgba(255,255,255,.7);
+    display: inline-block;
+    font: 500 14px/44px Roboto,sans-serif;
+    margin: 0;
+    padding: 0 24px;
+    text-transform: uppercase;
+    transition: color .2s;
+}
+
+.devsite-doc-set-nav-tab:hover, .devsite-doc-set-nav-tab:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.devsite-breadcrumb-list {
+    padding: 0;
+    white-space: nowrap;
+}
+ul{
+    margin: 0;
+}
